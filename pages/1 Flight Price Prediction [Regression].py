@@ -14,6 +14,8 @@ with open('E:/Machine Learning Project/Flight Price Prediction/flight_y_pipeline
 q1 = data['price'].quantile(0.25)
 q3 = data['price'].quantile(0.75)
 
+st.subheader("Please Enter the Following Details of Your Flight:")
+st.write('')
 
 with st.form("prediction_form"):
     one, two, three = st.columns(3)
@@ -36,6 +38,9 @@ with st.form("prediction_form"):
         duration = st.number_input('Duration of Flight in Hours', value=0.0, min_value=0.0, step=0.01)
 
     submit = st.form_submit_button('Predict')
+
+st.subheader("Output:")
+st.write('')
 
 if submit:
     days_left = (departure_date - datetime.today().date()).days
