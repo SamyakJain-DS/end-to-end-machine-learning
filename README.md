@@ -2,11 +2,15 @@
 
 ## 🔗 Live App
 Access the live deployed project at [https://samyak-jain-ml.streamlit.app/](https://samyak-jain-ml.streamlit.app/)
+<img width="1920" height="965" alt="image" src="https://github.com/user-attachments/assets/f0d2bc3c-ba66-4d40-97e3-9b26e2029fcb" />
 
 ## 📄 Overview
 This project moves beyond theoretical exercises to solve two distinct, real-world business problems. An end-to-end data science project involves the entire lifecycle, from problem formulation to deploying a model into production for practical use. There are two end-to-end machine learning pipelines, each deployed as an interactive Streamlit webpage (see the Live App link above). It includes: 
 - Flight Ticket Price Prediction, a regression problem, and
+<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/db0cd796-2b3f-42a7-9ef7-d9848697b2a8" />
+
 - Customer Attrition Prediction for a Financial Institute, a classification problem.
+<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/5159567b-8a3f-4106-85cb-03404cc47634" />
 
 The focus is on thorough `data preprocessing`, `model comparison`, and `hyperparameter tuning` using reproducible `pipelines`. All steps – from raw data to final prediction – are encapsulated in scikit-learn pipelines to ensure consistency and prevent data leakage.
 In the introduction of this README, you can access the live Streamlit deployment here for real-time predictions.
