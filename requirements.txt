@@ -1,5 +1,4 @@
 imbalanced-learn==0.13.0
-imblearn==0.0
 jupyter-events==0.8.0
 jupyter-lsp==2.2.0
 jupyter_client==8.5.0
