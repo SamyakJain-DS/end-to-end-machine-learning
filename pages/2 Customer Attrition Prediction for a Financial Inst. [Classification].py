@@ -1,12 +1,14 @@
 import numpy as np
 import pandas as pd
+import os
 import pickle
 import streamlit as st
 
-data = pd.read_csv(r'..\Customer Attrition\attrition_data.csv')
-with open(r'..\Customer Attrition\attrition_model.pkl', 'rb') as f:
+root_dir = os.getcwd()
+data = pd.read_csv(os.path.join(root_dir,'Customer Attrition','attrition_data.csv'))
+with open(os.path.join(root_dir,'Customer Attrition','attrition_model.pkl'), 'rb') as f:
     model = pickle.load(f)
-with open(r'..\Customer Attrition\attrition_pipeline.pkl', 'rb') as f:
+with open(os.path.join(root_dir,'Customer Attrition','attrition_pipeline.pkl'), 'rb') as f:
     pipeline = pickle.load(f)
 order = ['country', 'gender', 'credit_score', 'age', 'tenure', 'acc_balance', 'prod_count', 'has_card', 'is_active', 'estimated_salary']
 

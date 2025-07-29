@@ -1,15 +1,17 @@
 from datetime import datetime, timedelta
 import numpy as np
+import os
 import pandas as pd
 import pickle
 import streamlit as st
 
-data = pd.read_csv('../Flight Price Prediction/cleaned_flights.csv')
-with open('../Flight Price Prediction/flight_model.pkl', 'rb') as f:
+root_dir = os.getcwd()
+data = pd.read_csv(os.path.join(root_dir,'Flight Price Prediction','cleaned_flights.csv'))
+with open(os.path.join(root_dir,'Flight Price Prediction','flight_model.pkl'), 'rb') as f:
     model = pickle.load(f)
-with open('../Flight Price Prediction/flight_pipeline.pkl', 'rb') as f:
+with open(os.path.join(root_dir,'Flight Price Prediction','flight_pipeline.pkl'), 'rb') as f:
     x_pipeline = pickle.load(f)
-with open('../Flight Price Prediction/flight_y_pipeline.pkl', 'rb') as f:
+with open(os.path.join(root_dir,'Flight Price Prediction','flight_y_pipeline.pkl'), 'rb') as f:
     y_pipeline = pickle.load(f)
 q1 = data['price'].quantile(0.25)
 q3 = data['price'].quantile(0.75)
