@@ -3,10 +3,10 @@ import pandas as pd
 import pickle
 import streamlit as st
 
-data = pd.read_csv(r'E:\Machine Learning Project\Customer Attrition\attrition_data.csv')
-with open(r'E:\Machine Learning Project\Customer Attrition\attrition_model.pkl', 'rb') as f:
+data = pd.read_csv(r'..\Customer Attrition\attrition_data.csv')
+with open(r'..\Customer Attrition\attrition_model.pkl', 'rb') as f:
     model = pickle.load(f)
-with open(r'E:\Machine Learning Project\Customer Attrition\attrition_pipeline.pkl', 'rb') as f:
+with open(r'..\Customer Attrition\attrition_pipeline.pkl', 'rb') as f:
     pipeline = pickle.load(f)
 order = ['country', 'gender', 'credit_score', 'age', 'tenure', 'acc_balance', 'prod_count', 'has_card', 'is_active', 'estimated_salary']
 
