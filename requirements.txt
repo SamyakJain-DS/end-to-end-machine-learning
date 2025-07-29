@@ -10,7 +10,7 @@ jupyterlab_server
 matplotlib
 matplotlib-inline
 notebook
-notebook_shim=
+notebook_shim
 numpy
 pandas
 plotly
