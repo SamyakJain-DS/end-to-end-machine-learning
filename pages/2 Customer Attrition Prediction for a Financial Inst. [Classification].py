@@ -4,6 +4,8 @@ import os
 import pickle
 import streamlit as st
 
+st.title("Customer Attrition Prediction Classification Model")
+
 root_dir = os.getcwd()
 data = pd.read_csv(os.path.join(root_dir,'Customer Attrition','attrition_data.csv'))
 with open(os.path.join(root_dir,'Customer Attrition','attrition_model.pkl'), 'rb') as f:

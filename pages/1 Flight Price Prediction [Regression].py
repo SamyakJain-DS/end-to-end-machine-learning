@@ -5,6 +5,8 @@ import pandas as pd
 import pickle
 import streamlit as st
 
+st.title("Flight Price Prediction Regression Model")
+
 root_dir = os.getcwd()
 data = pd.read_csv(os.path.join(root_dir,'Flight Price Prediction','cleaned_flights.csv'))
 with open(os.path.join(root_dir,'Flight Price Prediction','flight_model.pkl'), 'rb') as f:
