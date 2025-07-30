@@ -60,14 +60,14 @@ if submit:
     query = pd.DataFrame([query])
     query = x_pipeline.transform(query)
     prediction = model.predict(query)
-    prediction = y_pipeline.inverse_transform(prediction.reshape(-1, 1))
+    prediction = np.round(y_pipeline.inverse_transform(prediction.reshape(-1, 1))[0][0],2)
 
     if prediction <= q1:
-        st.success(f'Predicted Price For Your Flight: ₹{np.round(prediction[0][0],2):,}')
+        st.success(f'Predicted Range of Price For Your Flight: ₹{np.round(prediction - 997.04,2):,} - ₹{np.round(prediction + 1348.94,2):,}')
     elif (prediction > q1) and (prediction <= q3):
-        st.warning(f'Predicted Price For Your Flight: ₹{np.round(prediction[0][0],2):,}')
+        st.warning(f'Predicted Range of Price For Your Flight: ₹{np.round(prediction - 997.04,2):,} - ₹{np.round(prediction + 1348.94,2):,}')
     else:
-        st.error(f'Predicted Price For Your Flight: ₹{np.round(prediction[0][0],2):,}')
+        st.error(f'Predicted Range of Price For Your Flight: ₹{np.round(prediction - 997.04,2):,} - ₹{np.round(prediction + 1348.94,2):,}')
 
 # Footer
 st.markdown("---")
