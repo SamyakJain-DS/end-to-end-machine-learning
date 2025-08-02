@@ -58,6 +58,7 @@ To run this project on your local machine, please follow these steps. This proce
 - Install the required dependencies:
   `bash`
   ```bash
-  pip install -r requirements.txt
+  pip install -r all_requirements.txt
   ```
+  *Note: `requirements.txt` is used only to deploy streamlit, for all dependencies, please consider all_requirements.txt.
 - You're All Set!
