@@ -1,5 +1,7 @@
 # ✉️ E-Mail/SMS Spam Classification — Development Highlights
 
+<img width="1920" height="967" alt="image" src="https://github.com/user-attachments/assets/b435f00f-735d-4ac4-80f2-66a84aaa1f65" />
+
 ## 🔗 Live App
 Access the live deployed project at [https://samyak-jain-ml.streamlit.app/E-Mail_Spam_Detector](https://samyak-jain-ml.streamlit.app/E-Mail_Spam_Detector)
 
