@@ -13,6 +13,8 @@ with open(text_ppl_path, 'rb') as f:
 
 st.title('E-Mail/SMS Spam Classification')
 st.subheader('Upload an E-Mail file below: (EML or TXT format only)')
+st.caption('Please only use English E-Mails or SMS messages for classification.')
+st.caption('Model may sometimes misclassify due to small dataset size.')
 file = st.file_uploader('Upload E-Mail/SMS file', type=['eml', 'txt'])
 with open('temp.eml', 'wb') as f:
     if file is not None:
@@ -26,7 +28,7 @@ st.subheader('Enter the E-Mail/SMS text directly below:')
 if file is not None:
     st.text_area('E-Mail/SMS Text', height=200, disabled=True)
 else:
-    email_text = st.text_area('E-Mail/SMS Text', height=200)
+    email_text = st.text_area('Enter E-Mail/SMS Text', height=200)
 
 st.text('')
 if st.button('Classify'):

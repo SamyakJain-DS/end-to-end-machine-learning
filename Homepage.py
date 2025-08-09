@@ -30,6 +30,15 @@ with col1:
     """)
     if st.button("Go to Flight Price Predictor"):
         st.switch_page("pages/1 Flight Price Prediction [Regression].py")
+    
+    st.text('')
+    st.markdown("#### ✉️ E-Mail/SMS Spam Classification")
+    st.markdown("""
+                Paste your e-mail or SMS message, or upload a file, and instantly find out if it's spam or genuine.  
+                Powered by a **classification model** trained to detect unwanted and fraudulent messages.
+                """)
+    if st.button("Go to E-Mail/SMS Spam Classifier"):
+        st.switch_page("pages/3 E-Mail Spam Detector.py")
 
 with col2:
     st.markdown("#### 🧍‍♂️ Customer Attrition Prediction")
@@ -39,22 +48,28 @@ with col2:
     """)
     if st.button("Go to Customer Attrition Predictor"):
         st.switch_page("pages/2 Customer Attrition Prediction for a Financial Inst. [Classification].py")
+    st.text('')
 
 # Model Performance
 st.markdown("### 📊 Model Performance (Behind the Scenes)")
 with st.expander("🔍 Click to view model evaluation metrics"):
     st.markdown("#### 🟢 HistGradientBoosting Regressor (Flight Prices)")
     st.markdown("""
-    - **Cross-Validation R² Score:** `0.968`
-    - **Test R² Score:** `0.965`
+    - **Cross-Validation R² Score:** `0.97`
+    - **Test R² Score:** `0.97`
     """)
     st.markdown("#### 🔵 Extreme Gradient Boost Classifier (Customer Attrition)")
     st.markdown("""
-    - **Cross-Validation F1 Score:** `0.614`
-    - **Test Accuracy Score:** `0.812`
-    - **Test Precision Score:** `0.548`
-    - **Test Recall Score:** `0.752`
-    - **Test F1 Score:** `0.634`
+    - **Cross-Validation F1 Score:** `0.61`
+    - **Test Accuracy Score:** `0.81`
+    - **Test Precision Score:** `0.55`
+    - **Test Recall Score:** `0.75`
+    - **Test F1 Score:** `0.63`
+    """)
+    st.markdown("#### 🔴 Multinomial Naive Bayes (Spam Classification)")
+    st.markdown("""
+    - **Test Precision Score:** `0.99`
+    - **Test Recall Score:** `0.91`
     """)
 
 # How it works
