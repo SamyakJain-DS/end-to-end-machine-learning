@@ -4,7 +4,7 @@
 Access the live deployed project at [https://samyak-jain-ml.streamlit.app/](https://samyak-jain-ml.streamlit.app/)
 <img width="1920" height="965" alt="image" src="https://github.com/user-attachments/assets/f0d2bc3c-ba66-4d40-97e3-9b26e2029fcb" />
 
-[spam-classification-readme.md](Link to Spam Classification README)
+[Link to Spam Classification README](./spam-classification-readme.md)
 
 ## 📄 Overview
 This project moves beyond theoretical exercises to solve two distinct, real-world business problems. An end-to-end data science project involves the entire lifecycle, from problem formulation to deploying a model into production for practical use. There are two end-to-end machine learning pipelines, each deployed as an interactive Streamlit webpage (see the Live App link above). It includes: 
