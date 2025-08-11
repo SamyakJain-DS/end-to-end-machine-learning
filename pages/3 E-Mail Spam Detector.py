@@ -47,5 +47,6 @@ if st.button('Classify'):
         st.success('This E-Mail/SMS is NOT SPAM.')
     st.write("E-Mail/SMS Content:")
     st.caption(email_text)
-if os.path.exists(file_path):
-    os.remove(file_path)
+    st.caption(email_text)
+    if os.path.exists(file_path):
+        os.remove(file_path)
