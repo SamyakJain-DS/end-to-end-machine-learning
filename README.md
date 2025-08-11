@@ -1,7 +1,7 @@
 # Machine Learning Models Collection
 
 ## 🔗 Live App
-Access the live deployed project at [https://samyak-jain-ml.streamlit.app/](https://samyak-jain-ml.streamlit.app/)
+Access the live deployed project at [https://samyak-jain-ml.streamlit.app/Image_Color_Clustering](https://samyak-jain-ml.streamlit.app/Image_Color_Clustering)
 <img width="1920" height="965" alt="image" src="https://github.com/user-attachments/assets/f0d2bc3c-ba66-4d40-97e3-9b26e2029fcb" />
 
 [Link to Spam Classification README](./spam-classification-readme.md)
