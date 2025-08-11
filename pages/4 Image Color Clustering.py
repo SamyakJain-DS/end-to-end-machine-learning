@@ -27,7 +27,7 @@ def create_clusters(models, img_df):
         st.markdown(html_blocks, unsafe_allow_html=True)
 
 st.header('Image Color Clustering')
-st.subheader('Upload an image to see its dominant colors clustered.')
+st.subheader('Upload an image to see its 5 dominant colors.')
 
 img_b = st.file_uploader('Upload Image', type=['jpg', 'jpeg', 'png'])
 if img_b is not None:

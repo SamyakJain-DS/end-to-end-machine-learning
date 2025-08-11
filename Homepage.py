@@ -30,8 +30,8 @@ with col1:
     """)
     if st.button("Go to Flight Price Predictor"):
         st.switch_page("pages/1 Flight Price Prediction [Regression].py")
-    
     st.text('')
+    
     st.markdown("#### ✉️ E-Mail/SMS Spam Classification")
     st.markdown("""
                 Paste your e-mail or SMS message, or upload a file, and instantly find out if it's spam or genuine.  
@@ -49,6 +49,14 @@ with col2:
     if st.button("Go to Customer Attrition Predictor"):
         st.switch_page("pages/2 Customer Attrition Prediction for a Financial Inst. [Classification].py")
     st.text('')
+
+    st.markdown("#### 🖼️ Image Color Clustering")
+    st.markdown("""
+    Upload any image and instantly discover its top dominant colors, grouped by advanced clustering algorithms.  
+    Powered by **unsupervised learning models** that reveal the color palette hidden in your pictures.
+    """)
+    if st.button("Go to Image Color Clustering"):
+        st.switch_page("pages/4 Image Color Clustering.py")
 
 # Model Performance
 st.markdown("### 📊 Model Performance (Behind the Scenes)")
