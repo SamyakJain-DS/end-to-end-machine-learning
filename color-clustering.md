@@ -2,7 +2,7 @@
 Discover the `dominant colors` in any image using unsupervised machine learning!
 
 ## 🔗 Live App
-Access the live deployed project at [https://samyak-jain-ml.streamlit.app/](https://samyak-jain-ml.streamlit.app/)
+Access the live deployed project at [https://samyak-jain-ml.streamlit.app/Image_Color_Clustering](https://samyak-jain-ml.streamlit.app/Image_Color_Clustering)
 <img width="1920" height="964" alt="image" src="https://github.com/user-attachments/assets/1be70071-3833-4aca-830b-140a0ee5c63b" />
 A look at the webpage.
 
