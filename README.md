@@ -5,6 +5,7 @@ Access the live deployed project at [https://samyak-jain-ml.streamlit.app/Image_
 <img width="1920" height="965" alt="image" src="https://github.com/user-attachments/assets/f0d2bc3c-ba66-4d40-97e3-9b26e2029fcb" />
 
 [Link to Spam Classification README](./spam-classification-readme.md)
+
 [Link to Color Clustering README](./color-clustering.md)
 
 ## 📄 Overview
